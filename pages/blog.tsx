@@ -9,9 +9,16 @@ import { InferGetStaticPropsType } from 'next'
 export const POSTS_PER_PAGE = 5
 
 export const getStaticProps = async () => {
+  // draft가 아닌 문서만 필터링
   const activePosts = allBlogs.filter((p) => p.draft === false)
+
+  // 날짜 내림차순으로 정렬
   const posts = sortedBlogPost(activePosts)
+
+  // 한 페이지에 보여줄 게시물 수
   const initialDisplayPosts = posts.slice(0, POSTS_PER_PAGE)
+
+  // 페이지네이션 적용
   const pagination = {
     currentPage: 1,
     totalPages: Math.ceil(posts.length / POSTS_PER_PAGE),
