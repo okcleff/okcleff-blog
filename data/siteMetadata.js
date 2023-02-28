@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Dale Larroder',
-  author: 'Dale Larroder',
-  headerTitle: 'dalelarroder',
-  description: 'Software Developer at Aphex',
+  title: 'okcleff',
+  author: 'okcleff',
+  headerTitle: 'okcleff',
+  description: 'Web Developer in Korea',
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://dalelarroder.com',
@@ -10,8 +10,8 @@ const siteMetadata = {
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.webp',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'dlarroder@gmail.com',
-  github: 'https://github.com/dlarroder',
+  email: 'okcleff@gmail.com',
+  github: 'https://github.com/okcleff',
   twitter: 'https://twitter.com/dalelarroder',
   facebook: 'https://facebook.com/dlarroder',
   linkedin: 'https://www.linkedin.com/in/dale-larroder/',
