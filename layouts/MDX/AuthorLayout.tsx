@@ -22,7 +22,7 @@ export default function AuthorLayout({ children, content }: Props) {
               {occupation} <span className="font-semibold">{company}</span>
             </h2>
           </div>
-          <div>
+          {/* <div>
             <Image
               alt="Dale Larroder"
               height={130}
@@ -30,7 +30,7 @@ export default function AuthorLayout({ children, content }: Props) {
               src={avatar || ''}
               className="rounded-full object-scale-down grayscale"
             />
-          </div>
+          </div> */}
         </div>
         <div className="prose max-w-none pb-8 text-justify text-sm dark:prose-dark md:text-lg xl:col-span-2">
           {children}
