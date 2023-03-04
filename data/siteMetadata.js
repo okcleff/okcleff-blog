@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'Web Developer at Onionfive in Korea',
   language: 'ko',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://dalelarroder.com',
+  siteUrl: 'https://okcleff-blog.vercel.app/',
   siteRepo: 'https://github.com/okcleff/okcleff-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.webp',
