@@ -57,7 +57,7 @@ export default function PostLayout({ content, authorDetails, children, next, pre
             <div className="prose max-w-none pt-8 pb-8 dark:prose-dark">
               {children}
               <PostNavigation prev={prev} next={next} />
-              <PostComments />
+              {/* <PostComments /> */}
             </div>
           </div>
         </div>
