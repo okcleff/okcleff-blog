@@ -22,7 +22,7 @@ export default function Header() {
                 }
               )}
             >
-              okcleff
+              d.
             </div>
           </Link>
         </div>

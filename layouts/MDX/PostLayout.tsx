@@ -7,11 +7,11 @@ import { CoreContent } from '@/lib/utils/contentlayer'
 import type { Authors, Blog } from 'contentlayer/generated'
 import { ReactNode } from 'react'
 
-// const postDateTemplate: Intl.DateTimeFormatOptions = {
-//   year: 'numeric',
-//   month: 'long',
-//   day: 'numeric',
-// }
+const postDateTemplate: Intl.DateTimeFormatOptions = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}
 
 interface Props {
   content: CoreContent<Blog>
@@ -22,8 +22,7 @@ interface Props {
 }
 
 export default function PostLayout({ content, authorDetails, children, next, prev }: Props) {
-  const { slug, title, readingTime } = content
-  // const { slug, date, title, author, readingTime } = content
+  const { slug, date, title, author, readingTime } = content
 
   return (
     <>
@@ -38,14 +37,14 @@ export default function PostLayout({ content, authorDetails, children, next, pre
           <dl>
             <dt className="sr-only">Published on</dt>
             <dd className="flex flex-col justify-center text-base font-medium leading-6 text-white sm:flex-row sm:space-x-2">
-              {/* <div className="flex items-center justify-center space-x-2">
+              <div className="flex items-center justify-center space-x-2">
                 <span>{author}</span>
                 <span>-</span>
                 <time dateTime={date}>
                   {`${new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}`}
                 </time>
               </div>
-              <span className="hidden sm:block">-</span> */}
+              <span className="hidden sm:block">-</span>
               <span>{readingTime.text}</span>
             </dd>
           </dl>

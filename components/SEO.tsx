@@ -35,6 +35,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage }: CommonSEOPr
         <meta property="og:image" content={ogImage} key={ogImage} />
       )}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content={siteMetadata.twitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={twImage} />
@@ -95,14 +96,14 @@ export const BlogSEO = ({
   authorDetails,
   title,
   summary,
-  // date,
-  // lastmod,
+  date,
+  lastmod,
   url,
   images = [],
 }: BlogSeoProps) => {
   const router = useRouter()
-  // const publishedAt = new Date(date).toISOString()
-  // const modifiedAt = new Date(lastmod || date).toISOString()
+  const publishedAt = new Date(date).toISOString()
+  const modifiedAt = new Date(lastmod || date).toISOString()
   const imagesArr =
     images.length === 0
       ? [siteMetadata.socialBanner]
@@ -134,8 +135,8 @@ export const BlogSEO = ({
     },
     headline: title,
     image: featuredImages,
-    // datePublished: publishedAt,
-    // dateModified: modifiedAt,
+    datePublished: publishedAt,
+    dateModified: modifiedAt,
     author: authorList,
     publisher: {
       '@type': 'Organization',
@@ -160,8 +161,8 @@ export const BlogSEO = ({
         twImage={twImageUrl}
       />
       <Head>
-        {/* {date && <meta property="article:published_time" content={publishedAt} />}
-        {lastmod && <meta property="article:modified_time" content={modifiedAt} />} */}
+        {date && <meta property="article:published_time" content={publishedAt} />}
+        {lastmod && <meta property="article:modified_time" content={modifiedAt} />}
         <link rel="canonical" href={`${siteMetadata.siteUrl}${router.asPath}`} />
         <script
           type="application/ld+json"
