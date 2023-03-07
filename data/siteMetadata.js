@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Woncheol Ok',
   headerTitle: "Woncheol's web",
   description: 'Web Developer at Onionfive in Korea',
-  language: 'en-us',
+  language: 'ko',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://okcleff-blog.vercel.app/',
   siteRepo: 'https://github.com/okcleff/okcleff-blog',
@@ -17,7 +17,7 @@ const siteMetadata = {
   linkedin: '',
   spotify: '',
   steam: '',
-  locale: 'en-US',
+  locale: 'ko',
   comment: {
     provider: 'giscus',
     giscusConfig: {
