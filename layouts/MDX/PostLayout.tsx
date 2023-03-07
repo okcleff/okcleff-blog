@@ -7,11 +7,11 @@ import { CoreContent } from '@/lib/utils/contentlayer'
 import type { Authors, Blog } from 'contentlayer/generated'
 import { ReactNode } from 'react'
 
-const postDateTemplate: Intl.DateTimeFormatOptions = {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-}
+// const postDateTemplate: Intl.DateTimeFormatOptions = {
+//   year: 'numeric',
+//   month: 'long',
+//   day: 'numeric',
+// }
 
 interface Props {
   content: CoreContent<Blog>
@@ -22,7 +22,8 @@ interface Props {
 }
 
 export default function PostLayout({ content, authorDetails, children, next, prev }: Props) {
-  const { slug, date, title, author, readingTime } = content
+  const { slug, title, readingTime } = content
+  // const { slug, date, title, author, readingTime } = content
 
   return (
     <>
