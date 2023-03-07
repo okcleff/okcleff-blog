@@ -37,14 +37,14 @@ export default function PostLayout({ content, authorDetails, children, next, pre
           <dl>
             <dt className="sr-only">Published on</dt>
             <dd className="flex flex-col justify-center text-base font-medium leading-6 text-white sm:flex-row sm:space-x-2">
-              <div className="flex items-center justify-center space-x-2">
+              {/* <div className="flex items-center justify-center space-x-2">
                 <span>{author}</span>
                 <span>-</span>
                 <time dateTime={date}>
                   {`${new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}`}
                 </time>
               </div>
-              <span className="hidden sm:block">-</span>
+              <span className="hidden sm:block">-</span> */}
               <span>{readingTime.text}</span>
             </dd>
           </dl>
@@ -57,7 +57,7 @@ export default function PostLayout({ content, authorDetails, children, next, pre
             <div className="prose max-w-none pt-8 pb-8 dark:prose-dark">
               {children}
               <PostNavigation prev={prev} next={next} />
-              {/* <PostComments /> */}
+              <PostComments />
             </div>
           </div>
         </div>
