@@ -1,9 +1,9 @@
 const siteMetadata = {
-  title: 'okcleff',
+  title: 'Woncheol Ok',
   author: 'Woncheol Ok',
   headerTitle: "Woncheol's blog",
-  description: 'Web Developer at Onionfive in Korea',
-  language: 'ko',
+  description: 'Web Developer in Korea',
+  language: 'en',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://okcleff-blog.vercel.app/',
   siteRepo: 'https://github.com/okcleff/okcleff-blog',
