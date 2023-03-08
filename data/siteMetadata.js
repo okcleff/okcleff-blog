@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'Web Developer in Korea',
   language: 'en',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://okcleff-blog.vercel.app/',
+  siteUrl: 'https://okcleff-blog.vercel.app',
   siteRepo: 'https://github.com/okcleff/okcleff-blog',
   siteLogo: '',
   image: '',
